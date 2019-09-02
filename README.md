@@ -7,8 +7,7 @@ This taks consist of building a simple app using React framework and libraries, 
   - Redux
   - Redux-Saga
   - Styled Components
-  - Recompose
-  - Reselect
+  - React Hooks
   - etc...
 
   The app is already set up with CRA.
@@ -24,9 +23,8 @@ This taks consist of building a simple app using React framework and libraries, 
 
   - Use only styled-components for styling (no className props 😉)
   - Use React-Saga for handling effects
-  - Use Redux (of course duh!)
+  - Use Redux
   - Redux modules should follow [redux ducks](https://github.com/erikras/ducks-modular-redux) structure 
-  - Use [Recompose](https://github.com/acdlite/recompose) for avoiding using useless class elements
 
   *extra: Try to use [flow](https://flow.org/) for types!*
 
