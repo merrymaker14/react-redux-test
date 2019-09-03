@@ -1,28 +1,36 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import styled from 'styled-components';
+import GlobalStyle from './theme/globalStyle';
+import { white } from './theme/variables';
+import Header from './components/Header';
+import UsersList from './components/UsersList';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const AppWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
 
+const Content = styled.div`
+  width: 600px;
+  min-height: 400px;
+  margin-left: 20px;
+  margin0-right: 20px;
+  background-color: ${white};
+`;
+
+const App = () => {
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <AppWrapper>
+        <Content>
+          <Header />
+          <UsersList />
+        </Content>
+      </AppWrapper>
+    </Fragment>
+  );
+};
 export default App;
